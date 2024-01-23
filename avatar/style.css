@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #010123, #000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: linear-gradient(to right, #02032fe5 30%, #00000088),
+    url(download.webp);
+  background-position: center;
+  width: 88%;
+  height: 640px;
+  transition: 0.3s;
+}
+.container:hover {
+  background-image: linear-gradient(to right, #02032fe5 30%, transparent),
+    url(download.webp);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 10px;
+}
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+nav a:hover {
+  border-bottom-color: white;
+}
+
+.content {
+  color: white;
+  width: 50%;
+  margin-top: 50px;
+  padding: 30px;
+}
+.content h2 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.content p {
+  letter-spacing: 2px;
+  width: 350px;
+  padding: 20px 0;
+}
+.content button {
+  font-size: 30px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+.content button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
